@@ -1,19 +1,18 @@
+import Link from "next/link"
+
 export default function HeaderContent() {
   return (
-    <header className="w-full h-20 flex justify-end">
-      <nav className="flex items-center">
-        <ul className="hidden md:flex gap-10 m-4">
+    <header className="h-20 max-w-5xl flex w-full justify-end m-auto">
+      <nav>
+        <ul className="hidden md:flex gap-10 my-4 font-semibold py-1 px-6 shadow-underlineMenu">
           <li>
-            <button type="button">funky mode</button>
+            <Link href="#about-me">Über mich</Link>
           </li>
           <li>
-            <a href="#about-me">Über mich</a>
+            <Link href="#portfolio">Projekte</Link>
           </li>
           <li>
-            <a href="#projects">Projekte</a>
-          </li>
-          <li>
-            <a href="#contact">Kontakt</a>
+            <Link href="#contact">Kontakt</Link>
           </li>
         </ul>
       </nav>
