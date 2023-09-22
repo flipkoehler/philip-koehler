@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'underlineMenu': '0 4px 6px -6px #FFF;',
+      },
       keyframes: {
         float: {
           '0%': { 
