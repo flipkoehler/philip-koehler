@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        'ultraviolet': '#4E4187',
+        'lightyellow': '#F8FFE5',
+        'lightgreen': '#7DDE92',
+        'atomictangerine': '#FAA381',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
