@@ -33,9 +33,9 @@ export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
       <div className="md:w-56 md:h-56 h-48 w-48 rounded-full relative">
         <Image
           className="rounded-full"
-          src="/assets/philip_köhler.jpg"
+          src={centerPic}
           fill={true}
-          alt="Bild vom professionellen Philip Köhler"
+          alt="Bild von Philip Köhler"
         />
       </div>
 

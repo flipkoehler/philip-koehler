@@ -13,6 +13,7 @@ const config: Config = {
         'lightyellow': '#F8FFE5',
         'lightgreen': '#7DDE92',
         'atomictangerine': '#FAA381',
+        'cloudwhite': '#E2EAEE',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
