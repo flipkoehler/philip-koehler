@@ -11,7 +11,7 @@ export default function TextCard({
 }: TextProps) {
   return (
     <div className="p-4">
-      <h2 className="text-lg">{headline}</h2>
+      <h2>{headline}</h2>
       <p className="leading-relaxed text-justify">{firstContent}</p>
       <br></br>
       <p className="leading-relaxed text-justify">{secondContent}</p>
