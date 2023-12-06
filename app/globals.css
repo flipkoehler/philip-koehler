@@ -11,3 +11,18 @@ body {
   color: #0A0908;
   overflow-x: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}

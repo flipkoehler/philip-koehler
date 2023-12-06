@@ -15,13 +15,16 @@ type PictureCardProps = {
 
 export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
   const parentRef = useRef<HTMLDivElement>(null)
-  const [divWidth, setDivWidth] = useState<number>(0)
+  const [divWidth, setDivWidth] = useState<number>(0.1)
 
   useEffect(() => {
     if (parentRef.current) {
       const parentWidth = parentRef.current.getBoundingClientRect().width
-      setDivWidth(parentWidth * 0.1)
-      console.log(divWidth)
+      if (parentWidth > 430) {
+        setDivWidth(parentWidth * 0.1)
+      } else {
+        setDivWidth(parentWidth * 0.08)
+      }
     }
   }, [divWidth])
 
@@ -33,9 +36,9 @@ export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
       <div className="md:w-56 md:h-56 h-48 w-48 rounded-full relative">
         <Image
           className="rounded-full"
-          src="/assets/philip_köhler.jpg"
+          src={centerPic}
           fill={true}
-          alt="Bild vom professionellen Philip Köhler"
+          alt="Bild von Philip Köhler"
         />
       </div>
 
@@ -49,13 +52,13 @@ export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
               <div
                 className={`animate-[pulse_ease-out_4s_infinite] bg-[#E2EAEE] h-[${divWidth}px] w-[${divWidth}px] shadow-lg rounded-full absolute top-0 bottom-0 left-0 right-0 -z-10`}
               ></div>
-              <div className="flex justify-center items-center w-full h-full">
+              <div className="flex justify-center items-center w-full h-full p-2">
                 <Image
                   src={bubble.image}
                   alt=""
                   height={divWidth}
                   width={divWidth}
-                  className="p-2"
+                  className="p-1"
                 />
               </div>
             </div>

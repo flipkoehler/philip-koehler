@@ -6,9 +6,9 @@ const workPic = "/assets/philip_köhler.jpg"
 const workText = {
   headline: "Meine Arbeitswelt",
   first:
-    "Vom Scrum Master zum Frontend Fuchs: Bis Ende 2022 habe ich als Scrum Master und Product Owner gearbeitet. Agile Prinzipien sind für mich wie der Kaffee am Morgen – unverzichtbar! Egal ob Portale, Content Management Systeme oder Online-Shops. Ich blicke auf eine 10 Jährige Geschichte an wilden Projekten.",
+    "Vom Scrum Master zum Frontend Fuchs: Bis Ende 2022 habe ich als Scrum Master und Product Owner gearbeitet. Ich blicke auf 10 Jahre spannender Projekte mit Content Management Systemen, Portalen und Online-Shops zurück.",
   second:
-    "Anfang 2023 habe ich dann die Seiten gewechselt. Mein Fokus verlagerte sich von Post-Its auf Vue und React. Typescript und Unit Tests sind seit je her meine treuen Begleiter, Tailwind oder Styled Components mein modisches Statement im Developer-Dschungel. In meiner Freizeit wage ich mich sogar ins Backend-Dickicht. Mehr dazu bei meinem Projekten.",
+    "Anfang 2023 habe ich die Seiten gewechselt. Mein Fokus verlagerte sich von Post-Its auf Vue und React. Typescript und Unit Tests sind seit je her meine treuen Begleiter, Tailwind oder Styled Components mein modisches Statement im Developer-Dschungel. In meiner Freizeit wage ich mich sogar ins Backend-Dickicht. Mehr dazu bei meinem Projekten.",
 }
 
 const workBubbles = [
@@ -53,8 +53,8 @@ const workBubbles = [
     image: "assets/business/tailwind.svg",
   },
   {
-    top: "top-[5%]",
-    left: "left-[45%]",
+    top: "top-[0%]",
+    left: "left-[35%]",
     image: "assets/business/typescript.svg",
   },
 ]
@@ -64,9 +64,9 @@ const freeTimePic = "/assets/privatepic.jpg"
 const freeTimeText = {
   headline: "Meine private Welt",
   first:
-    "Willkommen in meiner kleinen Welt: Als Kind habe ich mein gesamtes Taschengeld in die örtliche Videothek investiert. Die Faszination für Film und Kino ist seitdem zu einem festen Bestandteil meines Lebens geworden. So habe ich angefangen meine Liebe zum Film und die Liebe zum Programmieren in meinem Freizeitprojekt Movie Flip zu vereinen.",
+    "Als Kind habe ich mein gesamtes Taschengeld in die örtliche Videothek investiert. Die Faszination für Film und Kino ist seitdem zu einem festen Bestandteil meines Lebens geworden. Und ich habe angefangen meine Liebe zum Film und die Liebe zum Programmieren in meinem Freizeitprojekt Movie Flip zu vereinen.",
   second:
-    "Aber mein Leben ist nicht nur auf die Leinwand beschränkt – gemeinsam mit meiner Familie erkunde ich gerne diesen verrückten Planeten. Es gibt nichts Besseres, als sich in die majestätischen Berge zu wagen und die Welt unter meinen Wanderschuhen zu entdecken. Die Natur wird zur persönlichen Filmkulisse.",
+    "Gemeinsam mit meiner kleinen Familie erkunde ich zudem gerne diesen verrückten Planeten. Es gibt nichts schöneres, als schöne und naturbelassene Orte mit den Wanderschuhen zu entdecken. So wird die Natur zur ganz persönlichen Filmkulisse.",
 }
 
 const freeTimeBubbles = [
