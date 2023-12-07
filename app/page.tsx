@@ -9,6 +9,10 @@ export default function Home() {
   return (
     <>
       <Head>
+            <meta
+          name="google-site-verification"
+          content="0ofPNoFjh1HXsmLtm7gz0El0joyDZrrisyYAHTCjdAM"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
