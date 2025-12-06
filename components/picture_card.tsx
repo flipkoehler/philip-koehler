@@ -1,32 +1,32 @@
-"use client"
-import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+"use client";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 type Bubbles = {
-  top: string
-  left: string
-  image: string
-}
+  top: string;
+  left: string;
+  image: string;
+};
 
 type PictureCardProps = {
-  bubbles: Bubbles[]
-  centerPic: string
-}
+  bubbles: Bubbles[];
+  centerPic: string;
+};
 
 export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
-  const parentRef = useRef<HTMLDivElement>(null)
-  const [divWidth, setDivWidth] = useState<number>(0.1)
+  const parentRef = useRef<HTMLDivElement>(null);
+  const [divWidth, setDivWidth] = useState<number>(0.1);
 
   useEffect(() => {
     if (parentRef.current) {
-      const parentWidth = parentRef.current.getBoundingClientRect().width
+      const parentWidth = parentRef.current.getBoundingClientRect().width;
       if (parentWidth > 430) {
-        setDivWidth(parentWidth * 0.1)
+        setDivWidth(parentWidth * 0.1);
       } else {
-        setDivWidth(parentWidth * 0.08)
+        setDivWidth(parentWidth * 0.08);
       }
     }
-  }, [divWidth])
+  }, [divWidth]);
 
   return (
     <div
@@ -48,7 +48,7 @@ export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
             key={index}
             className={`${bubble.left} ${bubble.top} h-[${divWidth}px] w-[${divWidth}px] rounded-full absolute animate-[float_4s_infinite]`}
           >
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full p-2">
               <div
                 className={`animate-[pulse_ease-out_4s_infinite] bg-[#E2EAEE] h-[${divWidth}px] w-[${divWidth}px] shadow-lg rounded-full absolute top-0 bottom-0 left-0 right-0 -z-10`}
               ></div>
@@ -63,8 +63,8 @@ export default function PictureCard({ bubbles, centerPic }: PictureCardProps) {
               </div>
             </div>
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
